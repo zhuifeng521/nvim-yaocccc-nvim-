@@ -96,11 +96,11 @@ G.map({
 
     -- alt + key 操作
     { 'i', '<m-d>',       '<Esc>"_ciw',       { noremap = true } },
-    { 'i', '<m-r>',       '<Esc>"_ciw',       { noremap = true } },
+    { 'i', '<m-c>',       '<Esc>"_ciw',       { noremap = true } },
     { 'i', '<m-o>',       '<Esc>o',           { noremap = true } },
     { 'i', '<m-O>',       '<Esc>O',           { noremap = true } },
     { 'n', '<m-d>',       '"_diw',            { noremap = true } },
-    { 'n', '<m-r>',       '"_ciw',            { noremap = true } },
+    { 'n', '<m-c>',       '"_ciw',            { noremap = true } },
 
     -- windows: sp 上下窗口 sv 左右分屏 sc关闭当前 so关闭其他 s方向切换
     { 'n', 'sv',          ':vsp<cr><c-w>w',   { noremap = true } },

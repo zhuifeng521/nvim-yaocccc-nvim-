@@ -24,7 +24,7 @@ function M.config()
           call fzf#vim#grep(initial_command, 1, spec, a:fullscreen)
         endf
 
-        com! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
+        com! -nargs=* -bang RG call RipgrepFzf(expand("<cword>"), <bang>0)
     ]])
     G.cmd([[
         func! CHistory()

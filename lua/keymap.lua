@@ -79,6 +79,7 @@ G.map({
     -- 选中全文 选中{ 复制全文
     { 'n', '<m-a>',       'ggVG',             { noremap = true } },
     { 'n', '<m-s>',       'vi{',              { noremap = true } },
+    { 'n', '<m-b>',       'vib',              { noremap = true } },
 
     -- emacs风格快捷键 清空一行
     { 'n', '<c-u>',       'cc<Esc>',          { noremap = true } },

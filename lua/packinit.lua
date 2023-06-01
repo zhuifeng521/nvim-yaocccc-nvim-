@@ -24,7 +24,8 @@ require('packer').startup({
     function(use)
         -- packer 管理自己的版本
         use { 'wbthomason/packer.nvim' }
-
+        -- vim寄存器值获取（\“或者@）
+        use {'junegunn/vim-peekaboo'}
         -- 启动时间分析
         use { "dstein64/vim-startuptime", cmd = "StartupTime" }
 

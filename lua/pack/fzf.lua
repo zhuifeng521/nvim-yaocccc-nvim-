@@ -40,6 +40,7 @@ function M.config()
         { 'n', '<c-l>', ':BLines<cr>',   { silent = true, noremap = true } },
         { 'n', '<c-g>', ':GFiles?<cr>',  { silent = true, noremap = true } },
         { 'n', '<c-h>', ':CHistory<cr>', { silent = true, noremap = true } },
+        { 'n', '<c-b>', ':Buffers<cr>', { silent = true, noremap = true } },
     })
 end
 

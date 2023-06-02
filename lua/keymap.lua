@@ -117,15 +117,15 @@ G.map({
     { 'n', '<m-.>',       "winnr() <= winnr('$') - winnr() ? '<c-w>10>' : '<c-w>10<'", { noremap = true, expr = true } },
     { 'n', '<m-,>',       "winnr() <= winnr('$') - winnr() ? '<c-w>10<' : '<c-w>10>'", { noremap = true, expr = true } },
 
-    -- buffers
-    { 'n', 'W',           ':bw<cr>',          { noremap = true, silent = true } },
-    { 'n', 'ss',          ':bn<cr>',          { noremap = true, silent = true } },
-    { 'n', '<m-left>',    ':bp<cr>',          { noremap = true, silent = true } },
-    { 'n', '<m-right>',   ':bn<cr>',          { noremap = true, silent = true } },
-    { 'v', '<m-left>',    '<esc>:bp<cr>',     { noremap = true, silent = true } },
-    { 'v', '<m-right>',   '<esc>:bn<cr>',     { noremap = true, silent = true } },
-    { 'i', '<m-left>',    '<esc>:bp<cr>',     { noremap = true, silent = true } },
-    { 'i', '<m-right>',   '<esc>:bn<cr>',     { noremap = true, silent = true } },
+    -- -- buffers
+    -- { 'n', 'W',           ':bw<cr>',          { noremap = true, silent = true } },
+    -- { 'n', 'ss',          ':bn<cr>',          { noremap = true, silent = true } },
+    -- { 'n', '<m-left>',    ':bp<cr>',          { noremap = true, silent = true } },
+    -- { 'n', '<m-right>',   ':bn<cr>',          { noremap = true, silent = true } },
+    -- { 'v', '<m-left>',    '<esc>:bp<cr>',     { noremap = true, silent = true } },
+    -- { 'v', '<m-right>',   '<esc>:bn<cr>',     { noremap = true, silent = true } },
+    -- { 'i', '<m-left>',    '<esc>:bp<cr>',     { noremap = true, silent = true } },
+    -- { 'i', '<m-right>',   '<esc>:bn<cr>',     { noremap = true, silent = true } },
 
     -- tt 打开一个10行大小的终端
     { 'n', 'tt',          ':below 10sp | term<cr>a',                          { noremap = true, silent = true } },

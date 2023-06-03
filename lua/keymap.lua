@@ -103,19 +103,19 @@ G.map({
     { 'n', '<m-d>',       '"_diw',            { noremap = true } },
     { 'n', '<m-c>',       '"_ciw',            { noremap = true } },
 
-    -- windows: sp 上下窗口 sv 左右分屏 sc关闭当前 so关闭其他 s方向切换
-    { 'n', 'sv',          ':vsp<cr><c-w>w',   { noremap = true } },
-    { 'n', 'sp',          ':sp<cr><c-w>w',    { noremap = true } },
-    { 'n', 'sc',          ':close<cr>',       { noremap = true } },
-    { 'n', 'so',          ':only<cr>',        { noremap = true } },
-    { 'n', 's<Left>',     '<c-w>h',           { noremap = true } },
-    { 'n', 's<Right>',    '<c-w>l',           { noremap = true } },
-    { 'n', 's<Up>',       '<c-w>k',           { noremap = true } },
-    { 'n', 's<Down>',     '<c-w>j',           { noremap = true } },
-    { 'n', '<c-Space>',   '<c-w>w',           { noremap = true } },
-    { 'n', 's=',          '<c-w>=',           { noremap = true } },
-    { 'n', '<m-.>',       "winnr() <= winnr('$') - winnr() ? '<c-w>10>' : '<c-w>10<'", { noremap = true, expr = true } },
-    { 'n', '<m-,>',       "winnr() <= winnr('$') - winnr() ? '<c-w>10<' : '<c-w>10>'", { noremap = true, expr = true } },
+    -- -- windows: sp 上下窗口 sv 左右分屏 sc关闭当前 so关闭其他 s方向切换
+    -- { 'n', 'sv',          ':vsp<cr><c-w>w',   { noremap = true } },
+    -- { 'n', 'sp',          ':sp<cr><c-w>w',    { noremap = true } },
+    -- { 'n', 'sc',          ':close<cr>',       { noremap = true } },
+    -- { 'n', 'so',          ':only<cr>',        { noremap = true } },
+    -- { 'n', 's<Left>',     '<c-w>h',           { noremap = true } },
+    -- { 'n', 's<Right>',    '<c-w>l',           { noremap = true } },
+    -- { 'n', 's<Up>',       '<c-w>k',           { noremap = true } },
+    -- { 'n', 's<Down>',     '<c-w>j',           { noremap = true } },
+    -- { 'n', '<c-Space>',   '<c-w>w',           { noremap = true } },
+    -- { 'n', 's=',          '<c-w>=',           { noremap = true } },
+    -- { 'n', '<m-.>',       "winnr() <= winnr('$') - winnr() ? '<c-w>10>' : '<c-w>10<'", { noremap = true, expr = true } },
+    -- { 'n', '<m-,>',       "winnr() <= winnr('$') - winnr() ? '<c-w>10<' : '<c-w>10>'", { noremap = true, expr = true } },
 
     -- -- buffers
     -- { 'n', 'W',           ':bw<cr>',          { noremap = true, silent = true } },

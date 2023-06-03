@@ -18,12 +18,6 @@ G.map({
     { 'n', '<c-j>',       'f,a<cr><esc>',     { noremap = true } },
     { 'i', '<c-j>',       '<esc>f,a<cr>',     { noremap = true } },
 
-    -- cmap
-    { 'c', '<c-a>',       '<home>',           { noremap = true } },
-    { 'c', '<c-e>',       '<end>',            { noremap = true } },
-    { 'c', '<up>',        '<c-p>',            { noremap = true } },
-    { 'c', '<down>',      '<c-n>',            { noremap = true } },
-
     -- c-s = :%s/
     { 'n', '<c-s>',       ':<c-u>%s/\\v//gc<left><left><left><left>', { noremap = true } },
     { 'v', '<c-s>',       ':s/\\v//gc<left><left><left><left>',       { noremap = true } },

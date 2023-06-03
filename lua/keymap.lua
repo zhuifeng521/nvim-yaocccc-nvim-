@@ -76,56 +76,11 @@ G.map({
     { 'v', '<c-s-left>',  '^',                { noremap = true } },
     { 'v', '<c-s-right>', '$h',               { noremap = true } },
 
-    -- 选中全文 选中{ 复制全文
-    { 'n', '<m-a>',       'ggVG',             { noremap = true } },
-    { 'n', '<m-s>',       'vi{',              { noremap = true } },
-    { 'n', '<m-b>',       'vib',              { noremap = true } },
-
     -- emacs风格快捷键 清空一行
     { 'n', '<c-u>',       'cc<Esc>',          { noremap = true } },
     { 'i', '<c-u>',       '<Esc>cc',          { noremap = true } },
     { 'i', '<c-a>',       '<Esc>I',           { noremap = true } },
     { 'i', '<c-e>',       '<Esc>A',           { noremap = true } },
-
-    -- alt + 上 下移动行
-    { 'n', '<m-up>',      ':m .-2<cr>',       { noremap = true, silent = true } },
-    { 'n', '<m-down>',    ':m .+1<cr>',       { noremap = true, silent = true } },
-    { 'i', '<m-up>',      '<Esc>:m .-2<cr>i', { noremap = true, silent = true } },
-    { 'i', '<m-down>',    '<Esc>:m .+1<cr>i', { noremap = true, silent = true } },
-    { 'v', '<m-up>',      ":m '<-2<cr>gv",    { noremap = true, silent = true } },
-    { 'v', '<m-down>',    ":m '>+1<cr>gv",    { noremap = true, silent = true } },
-
-    -- alt + key 操作
-    { 'i', '<m-d>',       '<Esc>"_ciw',       { noremap = true } },
-    { 'i', '<m-c>',       '<Esc>"_ciw',       { noremap = true } },
-    { 'i', '<m-o>',       '<Esc>o',           { noremap = true } },
-    { 'i', '<m-O>',       '<Esc>O',           { noremap = true } },
-    { 'n', '<m-d>',       '"_diw',            { noremap = true } },
-    { 'n', '<m-c>',       '"_ciw',            { noremap = true } },
-
-    -- -- windows: sp 上下窗口 sv 左右分屏 sc关闭当前 so关闭其他 s方向切换
-    -- { 'n', 'sv',          ':vsp<cr><c-w>w',   { noremap = true } },
-    -- { 'n', 'sp',          ':sp<cr><c-w>w',    { noremap = true } },
-    -- { 'n', 'sc',          ':close<cr>',       { noremap = true } },
-    -- { 'n', 'so',          ':only<cr>',        { noremap = true } },
-    -- { 'n', 's<Left>',     '<c-w>h',           { noremap = true } },
-    -- { 'n', 's<Right>',    '<c-w>l',           { noremap = true } },
-    -- { 'n', 's<Up>',       '<c-w>k',           { noremap = true } },
-    -- { 'n', 's<Down>',     '<c-w>j',           { noremap = true } },
-    -- { 'n', '<c-Space>',   '<c-w>w',           { noremap = true } },
-    -- { 'n', 's=',          '<c-w>=',           { noremap = true } },
-    -- { 'n', '<m-.>',       "winnr() <= winnr('$') - winnr() ? '<c-w>10>' : '<c-w>10<'", { noremap = true, expr = true } },
-    -- { 'n', '<m-,>',       "winnr() <= winnr('$') - winnr() ? '<c-w>10<' : '<c-w>10>'", { noremap = true, expr = true } },
-
-    -- -- buffers
-    -- { 'n', 'W',           ':bw<cr>',          { noremap = true, silent = true } },
-    -- { 'n', 'ss',          ':bn<cr>',          { noremap = true, silent = true } },
-    -- { 'n', '<m-left>',    ':bp<cr>',          { noremap = true, silent = true } },
-    -- { 'n', '<m-right>',   ':bn<cr>',          { noremap = true, silent = true } },
-    -- { 'v', '<m-left>',    '<esc>:bp<cr>',     { noremap = true, silent = true } },
-    -- { 'v', '<m-right>',   '<esc>:bn<cr>',     { noremap = true, silent = true } },
-    -- { 'i', '<m-left>',    '<esc>:bp<cr>',     { noremap = true, silent = true } },
-    -- { 'i', '<m-right>',   '<esc>:bn<cr>',     { noremap = true, silent = true } },
 
     -- tt 打开一个10行大小的终端
     { 'n', 'tt',          ':below 10sp | term<cr>a',                          { noremap = true, silent = true } },

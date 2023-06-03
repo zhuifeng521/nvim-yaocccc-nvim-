@@ -36,7 +36,7 @@ G.map({
     { 'i', '<leader>s',         '<esc>:call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
     { 'v', '<leader>s',         '<esc>:call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
     { 'n', '<leader>q',         ':q!<cr>',                                                      { noremap = true, silent = true } },
-    { 'i', '<leader>q',         '<esc>:wq!<cr>',                                                 { noremap = true, silent = true } },
+    { 'i', '<leader>q',         '<esc>:q!<cr>',                                                 { noremap = true, silent = true } },
 
     -- VISUAL SELECT模式 s-tab tab左右缩进
     { 'v', '<',           '<gv',              { noremap = true } },

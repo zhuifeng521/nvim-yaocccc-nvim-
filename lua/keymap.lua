@@ -1,5 +1,5 @@
 local G = require('G')
-
+local leader = '\\'
 G.map({
     -- 设置s t 无效 ;=: ,重复上一次宏操作
     { 'n', 's',           '<nop>',            {} },
@@ -32,11 +32,11 @@ G.map({
     { 'v', 'P',           'Pgvy',             { noremap = true } },
 
     -- S保存 Q退出
-    { 'n', '\\s',         ':call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
-    { 'i', '\\s',         ':call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
-    { 'v', '\\s',         ':call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
-    { 'n', '\\q',         ':q!<cr>',                                                      { noremap = true, silent = true } },
-    { 'i', '\\q',         '<esc>:wq!<cr>',                                                 { noremap = true, silent = true } },
+    { 'n', '<leader>s',         ':call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
+    { 'i', '<leader>s',         ':call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
+    { 'v', '<leader>s',         ':call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
+    { 'n', '<leader>q',         ':q!<cr>',                                                      { noremap = true, silent = true } },
+    { 'i', '<leader>q',         '<esc>:wq!<cr>',                                                 { noremap = true, silent = true } },
 
     -- VISUAL SELECT模式 s-tab tab左右缩进
     { 'v', '<',           '<gv',              { noremap = true } },

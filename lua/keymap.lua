@@ -82,6 +82,10 @@ G.map({
     { 'v', '<m-down>',    '<Esc>',                                                        { noremap = true } },
     { 'v', '<m-left>',    '<Esc>',                                                        { noremap = true } },
     { 'v', '<m-right>',   '<Esc>',                                                        { noremap = true } },
+    { 'i', '<m-up>',      '<Esc>',                                                        { noremap = true } },
+    { 'i', '<m-down>',    '<Esc>',                                                        { noremap = true } },
+    { 'i', '<m-left>',    '<Esc>',                                                        { noremap = true } },
+    { 'i', '<m-right>',   '<Esc>',                                                        { noremap = true } },
 
     -- tt 打开一个10行大小的终端
     { 'n', 'tt',          ':below 10sp | term<cr>a',                          { noremap = true, silent = true } },

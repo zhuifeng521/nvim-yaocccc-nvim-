@@ -32,9 +32,9 @@ G.map({
     { 'v', 'P',           'Pgvy',             { noremap = true } },
 
     -- S保存 Q退出
-    { 'n', '<leader>s',         ':call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
-    { 'i', '<leader>s',         ':call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
-    { 'v', '<leader>s',         ':call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
+    { 'n', '<leader>s',         '<esc>:call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
+    { 'i', '<leader>s',         '<esc>:call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
+    { 'v', '<leader>s',         '<esc>:call v:lua.MagicSave()<cr>',                                  { noremap = true, silent = true } },
     { 'n', '<leader>q',         ':q!<cr>',                                                      { noremap = true, silent = true } },
     { 'i', '<leader>q',         '<esc>:wq!<cr>',                                                 { noremap = true, silent = true } },
 

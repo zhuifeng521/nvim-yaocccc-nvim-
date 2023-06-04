@@ -29,6 +29,8 @@ require('packer').startup({
         -- 当前屏幕快速定位搜索
         require('pack/leap').config()
         use {'ggandor/leap.nvim'}
+        -- f F t T 功能增强
+        use {'ggandor/flit.nvim'}
         -- 启动时间分析
         use { "dstein64/vim-startuptime", cmd = "StartupTime" }
 

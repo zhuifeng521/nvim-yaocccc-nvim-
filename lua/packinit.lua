@@ -26,6 +26,9 @@ require('packer').startup({
         use { 'wbthomason/packer.nvim' }
         -- vim寄存器值获取（\“或者@）
         use {'junegunn/vim-peekaboo'}
+        -- 当前屏幕快速定位搜索
+        require('pack/leap').config()
+        use {'ggandor/leap.nvim'}
         -- 启动时间分析
         use { "dstein64/vim-startuptime", cmd = "StartupTime" }
 

@@ -2,7 +2,6 @@ local G = require('G')
 local leader = '\\'
 G.map({
     -- 设置s t 无效 ;=: ,重复上一次宏操作
-    { 'n', 's',           '<nop>',            {} },
     { 'n', ';',           ':',                {} },
     { 'v', ';',           ':',                {} },
     { 'n', '+',           '<c-a>',            { noremap = true } },

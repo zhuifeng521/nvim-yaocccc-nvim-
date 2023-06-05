@@ -1,5 +1,5 @@
 local G = require('G')
-local leader = '\\'
+local leader = G.leader
 G.map({
     -- 设置s t 无效 ;=: ,重复上一次宏操作
     { 'n', ';',           ':',                {} },

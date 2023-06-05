@@ -1,6 +1,6 @@
 local G = require('G')
 local M = {}
-
+local leader = G.leader
 function M.config()
     G.g.fzf_preview_window = {'right,40%,<50(down,50%)', 'ctrl-/'}
     G.g.fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
@@ -35,12 +35,12 @@ function M.config()
         com! CHistory call CHistory()
     ]])
     G.map({
-        { 'n', '<c-a>', ':RG<cr>',       { silent = true, noremap = true } },
-        { 'n', '<c-p>', ':Files<cr>',    { silent = true, noremap = true } },
-        { 'n', '<c-l>', ':BLines<cr>',   { silent = true, noremap = true } },
-        { 'n', '<c-g>', ':GFiles?<cr>',  { silent = true, noremap = true } },
-        { 'n', '<c-h>', ':CHistory<cr>', { silent = true, noremap = true } },
-        { 'n', '<c-b>', ':Buffers<cr>',  { silent = true, noremap = true } },
+        { 'n', '<leader>a', ':RG<cr>',       { silent = true, noremap = true } },
+        { 'n', '<leader>p', ':Files<cr>',    { silent = true, noremap = true } },
+        { 'n', '<leader>l', ':BLines<cr>',   { silent = true, noremap = true } },
+        { 'n', '<leader>g', ':GFiles?<cr>',  { silent = true, noremap = true } },
+        { 'n', '<leader>h', ':CHistory<cr>', { silent = true, noremap = true } },
+        { 'n', '<leader>b', ':Buffers<cr>',  { silent = true, noremap = true } },
     })
 end
 

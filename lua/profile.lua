@@ -3,6 +3,7 @@ local G = require('G')
 G.g.python3_host_prog = os.getenv('PYTHON') -- export PYTHON=$(which python3)
 G.opt.showcmd = true
 G.opt.encoding = 'utf-8'
+G.opt.fileencodings = 'utf-8,gbk,gb2312,gb18030'
 G.opt.wildmenu = true
 G.opt.pumheight = 10
 G.opt.conceallevel = 0

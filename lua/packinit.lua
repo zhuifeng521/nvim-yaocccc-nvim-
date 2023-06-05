@@ -27,7 +27,7 @@ require('packer').startup({
         -- vim寄存器值获取（\“或者@）
         use {'junegunn/vim-peekaboo'}
         -- 当前屏幕快速定位搜索
-        require('pack/leap').config()
+        require('pack/leap').setup()
         use {'ggandor/leap.nvim'}
         -- f F t T 功能增强
         use {'ggandor/flit.nvim'}

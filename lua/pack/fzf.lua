@@ -41,7 +41,8 @@ function M.config()
         { 'n', '<leader>g', ':GFiles?<cr>',  { silent = true, noremap = true } },
         { 'n', '<leader>h', ':CHistory<cr>', { silent = true, noremap = true } },
         { 'n', '<leader>b', ':Buffers<cr>',  { silent = true, noremap = true } },
-        { 'n', '<leader>m', ':Marks<cr>',    { silent = true, noremap = true } },
+        { 'n', '<leader>d', ':bd<cr>',       { silent = true, noremap = true } },
+        { 'n', '<leader>m',  ':Marks<cr>',    { silent = true, noremap = true } },
     })
 end
 

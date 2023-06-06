@@ -32,7 +32,9 @@ require('packer').startup({
         use {'ggandor/flit.nvim'}
         -- 启动时间分析
         use { "dstein64/vim-startuptime", cmd = "StartupTime" }
-
+        -- session 管理
+        use { "Shatur/neovim-session-manager", config = "require('pack/session_manager').setup()"}
+        use { "nvim-lua/plenary.nvim" }
         -- 中文help doc
         use { 'yianwillis/vimcdoc', event = "CmdLineEnter" }
 

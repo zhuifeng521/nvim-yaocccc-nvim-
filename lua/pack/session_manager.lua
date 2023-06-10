@@ -1,6 +1,7 @@
 
 local G = require('G')
-local M = {}local Path = require('plenary.path')
+local M = {}
+local Path = require('plenary.path')
 local config = require('session_manager.config')
 function M.config()
 end
